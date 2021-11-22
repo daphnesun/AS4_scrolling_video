@@ -1,0 +1,95 @@
+.jumbotron{
+    background-image: url("/assets/banner.jpeg");
+    background-size: cover;
+    background-position: 50% 8%;
+    background-repeat: no-repeat;
+    height:100vh;
+    color:white;
+    margin-bottom:0;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* .heading{font-size: 1.6em;} */
+@media screen and (max-width: 992px) {
+  h1{
+      font-size:7vw;
+  }
+  h4{
+    font-size:5vw;
+}
+}
+@media screen and (min-width: 993px) {
+  h1{
+      font-size:4vw;
+  }
+  h4{
+    font-size:2vw;
+}
+}
+
+.page-title {
+
+      text-align: center;
+      margin: auto;
+      width: 90%;
+      /* height: 100%; */
+      vertical-align: middle;
+      /* padding: 10px; */
+  }
+  
+  .container-fluid {
+      padding: 30px;
+      display: flex;
+      flex-direction: row;
+  }
+
+
+
+
+/* img animation */
+.slideanimate {
+	width: 100%;
+	visibility: hidden;
+}
+
+.slide {
+	animation-name: slide;
+	animation-duration: 0.2s;
+	visibility: visible;
+	animation-fill-mode: forwards;
+} 
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+/* highlighting */
+.spot {
+	/* 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, #ffea9b 0); */
+	/* 	background-image: linear-gradient(90deg, white 20%, yellow 80%, gold); */
+	background-image: linear-gradient(90deg, white 50%, yellow 50%);
+	background-position: 0%;
+	background-size: 200%;
+	font-weight: 400;
+}
+
+.spotted {
+	background-position: -100%;
+	transition: all 1s;
+}
